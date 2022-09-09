@@ -1,100 +1,122 @@
-/* body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: consolas;
-} */
-
-.container{
-    width: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+* {
+	box-sizing: border-box;
 }
 
-.container .card{
-    position: relative;
-    cursor: pointer;
+html, body {
+	width: 100%;
+	height: 100%;
 }
 
-.container .card .face{
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-}
+body {
+	padding: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+/* 	background: #f9f9fb;
+ */}
 
-.container .card .face.face1{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
-}
-
-.container .card:hover .face.face1{
-    background: #ff0057;
-    transform: translateY(0);
-}
-
-.container .card .face.face1 .content{
-    opacity: 0.2;
-    transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content{
-    opacity: 1;
-}
-
-.container .card .face.face1 .content img{
-    max-width: 100px;
-}
-
-.container .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.container .card .face.face2{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2{
-    transform: translateY(0);
-}
-
-.container .card .face.face2 .content p{
-    margin: 0;
-    padding: 0;
-}
-
-.container .card .face.face2 .content a{
-    margin: 15px 0 0;
-    display:  inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
-}
-
-.container .card .face.face2 .content a:hover{
-    background: #333;
-    color: #fff;
+.card2 {
+	width: 300px;
+	display: inline-block;
+	margin: 1rem;
+	border-radius: 4px;
+	box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 2px 0 rgba(0,0,0,.2);
+	transition: all .2s ease;
+	background: #fff;
+	position: relative;
+	overflow: hidden;
+	
+	&:hover, &.hover {
+		transform: translateY(-4px);
+		box-shadow: 0 4px 25px 0 rgba(0,0,0,.3), 0 0 1px 0 rgba(0,0,0,.25);
+		
+		& .card2-content {
+			box-shadow: inset 0 3px 0 0 #00adef;
+			border-color: #00adef;
+		}
+		
+		& .card2-img .overlay {
+			background-color: rgba(25,29,38,.85);
+			transition: opacity .2s ease;
+			opacity: 1;
+		}
+	}
+	
+	&-img {
+		position: relative;
+		height: 400px;
+		width: 100%;
+		background-color: #fff;
+		transition: opacity .2s ease;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+		& .overlay {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			opacity: 0;
+			
+			& .overlay-content {
+				line-height: 224px;
+				width: 100%;
+				text-align: center;
+				color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 50%;
+                position: absolute;
+				
+				& a {
+					color: #fff;
+					padding: 0 2rem;
+					display: inline-block;
+					border: 1px solid rgba(255,255,255,.4);
+					height: 40px;
+					line-height: 40px;
+					border-radius: 20px;
+					cursor: pointer;
+					text-decoration: none;
+					
+					&:hover, &.hover {
+						background: #00adef;
+						border-color: #00adef;
+					}
+				}
+			}
+		}
+	}
+	
+	&-content {
+    width: 100%;
+    min-height: 104px;
+    background-color: #fff;
+    border-top: 1px solid #E9E9EB;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+		padding: 1rem;
+		transition: all .2s ease;
+		
+		& a {
+			text-decoration: none;
+			color: #202927;
+		}
+		
+		& h2, a h2 {
+			font-size: 2.2rem;
+			font-weight: 500;
+		}
+		
+		& p, a p {
+			font-size: 2rem;
+			font-weight: 400;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			color: rgba(32, 41, 28, .8);
+		}
+	}
 }
