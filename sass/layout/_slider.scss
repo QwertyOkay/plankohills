@@ -407,6 +407,7 @@ button {
 		transition: all 150ms ease;
 		&:hover {
 			transform: scale(1.1);
+			color: #00adef;
 		}
 	}
 }
@@ -420,3 +421,8 @@ button {
 		/* color: #00adefe8; */
     	font-weight: 600;
     }
+
+	.active {
+		/* text-decoration: underline; */
+		color: #00adef;
+	}
