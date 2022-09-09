@@ -337,6 +337,27 @@ button {
 	/* right: 10px; */
 	bottom: 10px;
     width: 100%;
+	font-family: 'Montserrat', sans-serif;
+    justify-content: space-around;
+	/* padding: 40px; */
+	display: flex;
+	 a {
+		margin: 0 10px;
+		color: #fff;
+		font-size: 1.8rem;
+		backface-visibility: hidden;
+		transition: all 150ms ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.support2 {
+	position: absolute;
+	/* right: 10px; */
+	top: 5%;
+    width: 100%;
     justify-content: space-around;
 	/* padding: 40px; */
 	display: flex;
@@ -358,4 +379,6 @@ button {
 
     .marg-r {
         margin-right: 10px;
+		/* color: #00adefe8; */
+    	font-weight: 600;
     }
