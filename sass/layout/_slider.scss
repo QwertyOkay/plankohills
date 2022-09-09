@@ -387,6 +387,30 @@ button {
 	}
 }
 
+.support3 {
+	position: absolute;
+	/* right: 10px; */
+	top: 100%;
+    width: 100%;
+	font-family: 'Montserrat', sans-serif;
+    justify-content: space-around;
+	/* padding: 40px; */
+	display: flex;
+	background: #000;
+	padding: 35px 0;
+	 a {
+		margin: 0 10px;
+		color: #fff;
+		
+		font-size: 1.8rem;
+		backface-visibility: hidden;
+		transition: all 150ms ease;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
     ::-webkit-scrollbar {
         display: none;
     }
