@@ -452,6 +452,30 @@ button:focus {
   color: #00adef;
 }
 
+.support4 {
+  position: absolute;
+  /* right: 10px; */
+  top: 100%;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-around;
+  /* padding: 40px; */
+  display: flex;
+  background: #000;
+  padding: 35px 0;
+}
+.support4 a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.8rem;
+  backface-visibility: hidden;
+  transition: all 150ms ease;
+}
+.support4 a:hover {
+  transform: scale(1.1);
+  color: #00adef;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -479,8 +503,7 @@ html, body {
 body {
   padding: 1rem 0;
   font-family: "Montserrat", sans-serif;
-  /* 	background: #f9f9fb;
-   */
+  background: #343434 !important;
 }
 
 .card2 {
