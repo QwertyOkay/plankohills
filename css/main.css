@@ -1333,6 +1333,7 @@ body {
 @media screen and (min-width: 1200px) {
   .product-detail {
     width: 48%;
+    margin-left: -9rem;
   }
 }
 
