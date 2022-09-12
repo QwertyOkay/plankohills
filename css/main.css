@@ -1460,4 +1460,10 @@ body {
 .product__button--success span:first-child {
   top: -4rem;
 }
+
+.logo-abs {
+  position: absolute;
+  top: -152%;
+  left: 4%;
+}
 /*# sourceMappingURL=main.css.map */
