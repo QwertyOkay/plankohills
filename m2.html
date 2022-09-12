@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="modernizr-js page modernizr-no-touchevents modernizr-cssanimations modernizr-csstransitions modernizr-webp modernizr-webp-alpha modernizr-webp-animation modernizr-webp-lossless" 
+lang="en"
+style="color:#343434;">
+  <head>
+    <title>Plankohills © MULTIFUNCTION</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <link rel="stylesheet" media="all" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+ <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+  </head>
+
+  <body style="background: #343434!important">
+
+    <div class="support2" style="    top: 4%;">
+      <ul style="display: flex; list-style: none; justify-content: space-between;">
+        <a href="cardio.html"><li class="marg-r ">CARDIO</li></a>
+        <a href="indoor.html"><li class="marg-r ">INDOOR CYCLING</li></a>
+        <a href="multi.html"><li class="marg-r active">MULTIFUNCTION</li></a>
+        <a href="about.html"><li class="marg-r">ABOUT US</li></a>
+      </ul>
+      <!-- <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://dribbble.com/devloop01" target="_blank"><i class="fab fa-dribbble"></i></a> -->
+    </div>
+
+    
+
+<div class="container2">
+  <div class="header">
+    <div class="header-logo">
+        <a href="index.html">
+      <img src="./img/plankohills.png" 
+      alt="">
+      </a>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-photo">
+      <!-- <img src="img/c1-2.png" style="height: 350px;"> -->
+      <img src="img/m2.jpg" style="width: 60%;height: 90%;">
+    </div>
+    <div class="product-detail">
+        <noindex>
+      <h1 class="product__title">Sissy Squat</h1>
+      </noindex>
+      <div class="product__price">€3199.99</div>
+      <noindex>
+      <div class="product__subtitle">CF11SS</div>
+      </noindex>
+      <div class="mt-5">
+                        <form>
+                          <div class="grid gap-y-4">
+                            <div>
+                              <label for="email" class="block text-sm font-bold ml-1 mb-2 dark:text-white">Email address</label>
+                              <div class="relative">
+                                <input type="email" id="email" name="email" class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm" required aria-describedby="email-error">
+                              </div>
+                              <p class="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
+                            </div>
+                            <button style="background-color: #24a1d1;"
+                            type="submit" data-modal-open
+                            class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">Order</button>
+                          </div>
+                        </form>
+                      </div>
+    </div>
+  </div>
+</div>
+
+
+<div style="display: flex;
+flex-wrap: wrap;
+justify-content: center;
+position: absolute;
+top: 30%;
+background: #343434;
+top: 88%;
+width: 100%;">
+
+
+    <div class="support3">
+      <ul style="display: flex; list-style: none; justify-content: space-between;">
+        <a href="terms.html"><li class="marg-r">TERMS</li></a>
+        <a href="indoor.html"><li class="marg-r">PRIVACY POLICY</li></a>
+        <a href="multi.html"><li class="marg-r">REFUND POLICY</li></a>
+        <a href="about.html"><li class="marg-r">CONTACT US</li></a>
+      </ul>
+    </div> 
+
+  </div>
+
+   <div class="modal__backdrop is-hidden" data-modal>
+    <div class="modal" data-form-modal>
+        <span class="modal__hero-text">Thank you for your order. We are processing it
+            <a href=""
+                target="_blank" 
+                class="modal__link-btn">
+            </a>
+             <span class="modal__close" data-modal-close>х CLOSE x</span>
+        </span>
+    </div>
+</div>
+
+    <script>
+      $(document).ready(function() {
+	
+	$('.card2').delay(1800).queue(function(next) {
+		$(this).removeClass('hover');
+		$('a.hover').removeClass('hover');
+		next();
+	});
+});
+    </script>
+   <script> 
+ (() => {
+     const refs = {
+       openModalBtn: document.querySelector('[data-modal-open]'),
+       closeModalBtn: document.querySelector('[data-modal-close]'),
+
+       modal: document.querySelector('[data-modal]'),
+       };
+  
+     refs.openModalBtn.addEventListener('click', toggleModal);
+     refs.closeModalBtn.addEventListener('click', toggleModal);
+        function toggleModal() {
+     refs.modal.classList.toggle('is-hidden');
+     }
+    
+     })();</script>
+
+  </body>
+</html>
